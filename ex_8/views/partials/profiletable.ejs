@@ -1,0 +1,48 @@
+<div class="container">    
+    <div class="card bg-light " style="width: 600px; margin-left: 250px; margin-top: 100px;">
+    <article class="card-body mx-auto" style="max-width: 300px;">
+        <form onsubmit="return mySubmitFunction(event)">
+        <div class="form-group input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+             </div>
+            <input name="" class="form-control" placeholder="<%=user.username%>" type="text" id="username" disabled>
+        </div> <!-- form-group// -->
+        <div class="form-group input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+             </div>
+            <input name="" class="form-control" placeholder="<%=user.email%>" type="email" id="email" disabled>
+        </div> <!-- form-group// -->
+        <div class="form-group input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text"> <i class="fas fa-transgender-alt"></i> </span>
+            </div>
+            <input class="form-control" placeholder="<%=user.gender%>" id="gender" disabled>
+        </div> <!-- form-group end.// -->
+        <div class="form-group input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+            </div>
+            <input class="form-control" placeholder="new password" type="password" id="pass" disabled>
+        </div> <!-- form-group// -->
+        <div class="form-group input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+            </div>
+            <input class="form-control" placeholder="Repeat password" type="password" id="passCom" disabled>
+        </div> <!-- form-group// -->                                      
+        <div class="form-group">
+            <button class = "btn btn-primary btn-block" onclick="edit()">edit  </button>
+        </div> <!-- form-group// -->      
+        <div class="form-group">
+            <button class = "btn btn-danger btn-block" onclick="logOut()">log out  </button>
+        </div> <!-- form-group// -->
+        <div class="form-group">
+            <button class = "btn btn-primary btn-block" onclick="apply()" id="">apply  </button>
+                                                               
+    </form>
+    </article>
+    </div> <!-- card.// -->
+    
+    </div> 
